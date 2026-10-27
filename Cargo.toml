@@ -1,0 +1,15 @@
+[package]
+name = "packed_seq"
+version = "0.1.0"
+edition = "2021"
+description = "Append-only CBOR sequence files with draft-ietf-cbor-packed style shared-item / prefix compression, on top of ciborium"
+
+[dependencies]
+ciborium = "0.2.2"
+ciborium-ll = "0.2.2"
+ciborium-io = { version = "0.2.2", features = ["std"] }
+serde = "1"
+thiserror = "1"
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
